@@ -1,3 +1,20 @@
+/*body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #efefef !important;
+    position: absolute;
+    top: 40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}*/
+
+.container{
+    position: absolute;
+    height: 14rem;
+    left: 20%;
+}
+
 .user_card {
     color:#fff;
     height: 475px;
@@ -44,9 +61,6 @@
     box-shadow: none !important;
     outline: 0px !important;
 }
-.login_container {
-    padding: 0 2rem;
-}
 .input-group-text {
     background: #27508F !important;
     color: white !important;
@@ -60,4 +74,14 @@
 }
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
     background-color: #27508F !important;
+}
+.error {
+    padding: 10px;
+}
+.error-container {
+    width: auto!important;
+    background-color: #fffddf!important;
+    border-radius: 5px;
+    color: #e01933!important;
+    font-size: 14px;
 }

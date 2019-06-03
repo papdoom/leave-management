@@ -7,6 +7,8 @@ import { LoginComponent } from './login/login.component';
 import { AdminComponent } from './admin/admin.component';
 import { UserComponent } from './user/user.component';
 import { HistoryComponent } from './history/history.component';
+import { ReactiveFormsModule } from "@angular/forms";
+import {AuthenticationService} from "./service/auth.service";
 
 @NgModule({
   declarations: [
@@ -18,9 +20,10 @@ import { HistoryComponent } from './history/history.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [AuthenticationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
